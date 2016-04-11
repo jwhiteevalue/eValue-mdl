@@ -1,0 +1,17 @@
+{
+    "name": "eValue-mdl",
+		"homepage": "https://github.com/jonwhite100/bpm-mdl",
+    "author": "Jon White",
+	  "description": "A version of Material Design for Bootstrap, based on original Google source code plus others.",
+		"main": [
+	    "sass/_master.scss",
+	    "js/eVmdl.js"
+	  ],
+    "ignore": [
+
+    ],
+    "dependencies": {
+        "jquery": ">=1.10.2"
+    },
+		"version": "0.0.1"
+}
