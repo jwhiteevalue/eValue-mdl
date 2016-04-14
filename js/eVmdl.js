@@ -667,3 +667,8 @@
   };
 
 })(jQuery, window, document);
+
+$(document).ready(function() {
+  'use strict';
+  $.material.init();
+});
