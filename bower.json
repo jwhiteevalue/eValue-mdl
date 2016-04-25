@@ -4,7 +4,7 @@
     "author": "Jon White",
 	  "description": "A version of Material Design for Bootstrap, based on original Google source code plus others.",
 		"main": [
-	    "sass/_master.scss",
+	    "sass/_eValue-master.scss",
 	    "js/eVmdl.js",
 	    "js/ripple.js"
 	  ],
@@ -14,5 +14,5 @@
     "dependencies": {
         "jquery": ">=1.10.2"
     },
-		"version": "0.0.3"
+		"version": "0.0.4"
 }
