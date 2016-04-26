@@ -12,7 +12,8 @@
 
     ],
     "dependencies": {
-        "jquery": ">=1.10.2"
+        "jquery": ">=1.10.2",
+				"eValue-bs": "~0.0.1"
     },
-		"version": "0.0.5"
+		"version": "0.0.6"
 }
