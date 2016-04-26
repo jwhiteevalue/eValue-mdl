@@ -8,10 +8,10 @@
 		"js/eValue-mdl.js",
 		"js/ripple.js"
 	],
-	"dependencies": [
+	"dependencies": {
 		"jquery": ">=1.10.2",
 		"eValue-bs": ">=0.0.10"
 		
-	],
+	},
 	"version": "0.0.13"
 }
