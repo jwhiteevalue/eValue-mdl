@@ -1,17 +1,18 @@
 ﻿{
-	"name": "eValue-mdl",
-	"homepage": "https://github.com/jwhiteevalue/eValue-mdl.git",
-	"author": "jon White",
-	"description": "A version of Material Design Lite, based on Googles original source code plus others (in particular bootstrap material design lite)",
-	"main": [
-		"sass/_eValue-master.scss",
-		"js/eValue-mdl.js",
+    "name": "eValue-mdl",
+		"homepage": "https://github.com/jwhiteevalue/eValue-mdl.git",
+    "author": "Jon White",
+	  "description": "A version of Material Design Lite for Bootstrap, particular to eValue.",
+		"main": [
+	    "sass/_eValue-master.scss",
+	    "js/eValue-mdl.js",
 		"js/ripple.js"
-	],
-	"dependencies": {
-		"jquery": ">=1.10.2",
-		"eValue-bs": ">=0.0.10"
-		
-	},
-	"version": "0.0.13"
+	  ],
+    "ignore": [
+
+    ],
+    "dependencies": {
+        "jquery": ">=1.10.2"
+    },
+		"version": "0.1.1"
 }
