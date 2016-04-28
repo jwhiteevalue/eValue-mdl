@@ -1,5 +1,4 @@
 (function(window, $) {
-
   $(function() {
 		$('.btn').on('click', function(event) {
       var $div = $('<div/>'),
