@@ -668,7 +668,21 @@
 
 })(jQuery, window, document);
 
-$(document).ready(function() {
-  'use strict';
-  $.material.init();
-});
+
+/* Fire up MDL in doc load and a modal */
+(function bowerComponentInit(){
+	'use strict';
+	console.info("bowerComponentInit()");
+
+
+	$(document).ready(function initialiseMaterialDesignOnDocumentReady() {
+		console.info("calling on document ready");
+	  $.material.init(document);
+	});
+
+
+	$(".modal[role='dialog']").on('loaded.bs.modal', function initialiseMaterialDesignOnModal() {
+		console.info("calling on a modal loaded");
+	  $.material.init();
+	})
+})();
