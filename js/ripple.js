@@ -58,14 +58,24 @@ function ripplesEverywhere() {
 /* Fire up MDL in doc load and a modal */
 (function ripplesGoPower(){
 	'use strict';
-		console.info("ripplesGoPower()");
+	//	console.info("ripplesGoPower()");
 	$(document).ready(function ripplesOnDocumentReady() {
-			console.info("calling on document ready");
+		//console.info("calling on document ready");
 	  ripplesEverywhere();
 	});
 
 	$(".modal[role='dialog']").on('loaded.bs.modal', function ripplesOnModal() {
-			console.info("calling on a modal loaded");
+		//console.info("calling on a modal loaded");
 		ripplesEverywhere();
 	})
+
+	$( document ).ajaxComplete(function initialiseMaterialDesignAJAXLoad( event, xhr, settings ) {
+		//console.log("Does the footer exist?")
+		//console.dir($("#footerBgColor"));
+		 if ( settings.dataType === "html" ) {
+			 /*Listen for all AJAX 'chit chat'
+				and Initialise Material design if we have just loaded a HTML snippet. (ignore an AJAX for JSON stuff like modelling or saving)*/
+			 ripplesEverywhere();
+		 }
+	 });
 })();

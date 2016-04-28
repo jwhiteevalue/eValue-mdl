@@ -337,7 +337,6 @@
 
 })(jQuery);
 
-
 /* Fire up MDL in doc load and a modal */
 (function bowerComponentInit(){
 	'use strict';
@@ -351,4 +350,14 @@
 		//		console.info("calling on a modal loaded");
 	  $.material.init();
 	})
+	
+	$( document ).ajaxComplete(function initialiseMaterialDesignAJAXLoad( event, xhr, settings ) {
+		//console.log("Does the footer exist?")
+		//console.dir($("#footerBgColor"));
+		 if ( settings.dataType === "html" ) {
+			 /*Listen for all AJAX 'chit chat'
+				and Initialise Material design if we have just loaded a HTML snippet. (ignore an AJAX for JSON stuff like modelling or saving)*/
+			 $.material.init();
+		 }
+	 });
 })();
