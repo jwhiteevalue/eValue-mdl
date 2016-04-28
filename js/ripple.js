@@ -53,7 +53,8 @@ function ripplesEverywhere() {
 	  });
 
 	})(window, jQuery);
-)};
+}
+
 /* Fire up MDL in doc load and a modal */
 (function ripplesGoPower(){
 	'use strict';
