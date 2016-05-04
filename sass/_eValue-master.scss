@@ -12,3 +12,135 @@
 @import '_tables.scss';
 @import '_modals.scss';
 //@import '_panels.scss';
+
+
+/* TODO: Put the following into separate files? */
+
+/* Table - reset Hands on table styling so that the Bootstrap styling takes effeft
+*********************************************************** */
+/* apply the box-shadow to the containing div, but remove from it's children */
+.handsontable {
+	.table {
+		box-shadow:0 0 0 0;
+		width:100%!important;
+
+		th,
+		td {
+			line-height:$line-height-base*1;
+		}
+	}
+}
+
+.handsontable {
+	/* the main table styling */
+	.ht_master.handsontable {
+		table {
+			border:1px solid $gray-lighter!important;
+			box-shadow: 0 2px 2px 0 rgba(0,0,0,.14),0 3px 1px -2px rgba(0,0,0,.2),0 5px 5px 0 rgba(0,0,0,.12);
+
+			th {
+				border-color:transparent!important;
+			}
+
+			td {
+				border-left-color:transparent;
+				border-right-color:transparent;
+				border-top-color:transparent;
+				border-bottom-color:transparent;
+			}
+
+			tbody {
+				th {
+					background-color:transparent;
+				}
+
+				td {
+					border-top-color:$gray-lighter;
+				}
+			}
+		}
+	}
+
+	/* the table that is overlaid which becomes the thead */
+	.ht_clone_top.handsontable {
+		border:1px solid transparent!important;
+		margin:0;
+		padding:0;
+
+		table {
+			margin:0;
+
+			thead {
+				th {
+					background-color:$gray-lightest;
+				}
+			}
+
+			thead,
+			tbody {
+				th {
+					border-bottom:1px solid $gray-lighter!important;
+				}
+			}
+
+			th {
+				border-color:transparent!important;
+			}
+
+			td {
+				border-color:transparent!important;
+			}
+		}
+	}
+
+	/* the table that is overlaid to becomes the first column of the table */
+	.ht_clone_left.handsontable {
+		border:1px solid transparent!important;
+		margin:0;
+		padding:0;
+
+		table {
+			margin:0;
+
+			thead,
+			tbody {
+				th {
+					border-color:transparent!important;
+					background-color:transparent!important;
+					border-top-color:$gray-lighter!important;
+
+				}
+
+				td {
+					border-color:transparent!important;
+
+				}
+			}
+		}
+	}
+
+	/* the table that is overlaid and is the top left (first cell) only */
+	.ht_clone_top_left_corner.handsontable {
+		border:1px solid transparent!important;
+		margin:0;
+		padding:0;
+
+		table {
+			margin:0;
+
+			thead {
+				th {
+					background-color:$gray-lightest;
+				}
+			}
+
+			th {
+				border-color:transparent!important;
+			}
+
+			td {
+				border-color:transparent!important;
+			}
+		}
+	}
+}
