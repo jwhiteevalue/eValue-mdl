@@ -66,6 +66,24 @@
 	}
 }
 
+/* table within a panel */
+.panel-no-padding {
+	padding-left:0;
+	padding-right:0;
+
+	.table {
+		width:100%;
+		border-width:0;
+		border-bottom-width:1px;
+		box-shadow:0 0 0 0;
+		th {
+			border-bottom-width:1px;
+			background-color:transparent;
+		}
+	}
+}
+
+
 /*
 .table {
   position: relative;
