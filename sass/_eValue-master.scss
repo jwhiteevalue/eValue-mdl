@@ -148,23 +148,34 @@
 /* Table resets for bootstrap-table component
 *********************************************************** */
 .bootstrap-table {
+	.table:not(.table-condensed) {
+		padding:14px 18px 12px 18px;
+		thead,
+		tbody,
+		tfoot {
+			 tr {
+				 th,
+				 td {
+					 padding:14px 18px 12px 18px;
+				 }
+
+				 th {
+					 padding-left:0;
+					 padding-right:0;
+				 }
+			 }
+		 }
+	}
+
 	.fixed-table-container {
 		border-width:0;
 
-		th,
-		td {
-			//padding:14px 18px 12px 18px;
-		}
-
 		thead {
 			th {
-				.desc {
-					background-position: left;
-				}
-
 				.sortable {
 					padding-left:25px;
 					padding-right:0;
+					background-position: left;
 				}
 			}
 		}
@@ -185,8 +196,5 @@
 				}
 			}
 		}
-		//border-bottom-color:transparent;
 	}
-}
-
 }
