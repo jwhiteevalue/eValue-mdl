@@ -25,4 +25,24 @@
   }
 }
 
-/* big fuck offf! */
+
+
+/* animate the glyphicons */
+.grow {
+	[class*="glyphicon"],
+	[class*="icon-"],
+	[class^="glyphicon"],
+	[class^="icon-"] {
+		transition: all .2s ease-in-out;
+	}
+}
+
+.grow:hover {
+	[class*="glyphicon"],
+	[class*="icon-"],
+	[class^="glyphicon"],
+	[class^="icon-"] {
+		transform: scale(1.5);
+		color:$brand-primary;
+	}
+}
