@@ -31,6 +31,14 @@
 	padding-top:0;
 }
 
+/* in an accordion the panel heading should have no padding... */
+.panel-group {
+	.panel-heading {
+		padding:0;
+	}
+}
+
+
 /* a section has padding on the bottom. so does a panel. What to do? */
 section.panel {
 	padding-bottom:0;
