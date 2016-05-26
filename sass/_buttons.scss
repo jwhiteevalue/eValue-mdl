@@ -1,13 +1,13 @@
 .btn-primary {
 //  @include button-variant($btn-color, $btn-background, $btn-border);
-	color:$btn-color;
-	background-color:$btn-background;
-	border-color:$btn-border;
+	// color:$btn-color;
+	// background-color:$btn-background;
+	// border-color:$btn-border;
 
 	&:active,
 	&:focus,
 	&:active:focus {
-		background-color:$brand-primary;
-		border-color:$brand-primary;
+		// background-color:$brand-primary;
+		// border-color:$brand-primary;
 	}
 }

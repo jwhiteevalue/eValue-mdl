@@ -1,17 +1,16 @@
-/* 1. import the original variables file so all variables work! */
-@import 'bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_variables.scss';
-
-/* 2. import eValue variables */
-
-@import "bower_components/eValue-bs/sass/_variables.scss";
-
 @import '_colors';
 
 $gray-lightest:#f5f5f5;
 $btn-color:#58585a;
 $btn-background:$brand-primary;
 $btn-border:$brand-primary;
-$brand-secondary:$gray-lightest;;
+$brand-secondary:$gray-lightest;
+
+/* 1. import the original variables file so all variables work! */
+@import "bower_components/eValue-bs/sass/_variables.scss";
+/* 2. import eValue variables */
+@import 'bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_variables.scss';
+
 
 // Typography elements
 //$font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif !default;
