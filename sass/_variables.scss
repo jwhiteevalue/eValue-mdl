@@ -5,11 +5,11 @@
 
 @import "bower_components/eValue-bs/sass/_variables.scss";
 
-$gray-lightest:#f1f1f1;
-$btn-color:#fff;
+$gray-lightest:#f5f5f5;
+$btn-color:#58585a;
 $btn-background:$brand-primary;
 $btn-border:$brand-primary;
-$brand-secondary:#ddd;
+$brand-secondary:$gray-lightest;;
 
 @import '_colors';
 
